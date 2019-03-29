@@ -22,30 +22,31 @@ app.get("/test", function(request, response)  {
 });
 
 app.post('/',function(req, res){
-    console.log(req.body.queryResult);
+    response.render("testPage");
+    // console.log(req.body.queryResult);
     
-    var _text = req.body.result.parameters.text;
-    var speech = "";
-    switch (_text) {
-		case 'hi':
-			speech = "Hi, Nice to meet you";
-			break;
+    // var _text = req.body.result.parameters.text;
+    // var speech = "";
+    // switch (_text) {
+		// case 'hi':
+			// speech = "Hi, Nice to meet you";
+			// break;
 
-		case 'bye':
-			speech = "Bye, good night";
-			break;
+		// case 'bye':
+			// speech = "Bye, good night";
+			// break;
 
-		case 'anything':
-			speech = "Yes, you can type anything here.";
-			break;
+		// case 'anything':
+			// speech = "Yes, you can type anything here.";
+			// break;
 		
-		default:
-			speech = "Sorry, I didnt get that. Please ask me something else.";
-			break;
-	}
+		// default:
+			// speech = "Sorry, I didnt get that. Please ask me something else.";
+			// break;
+	// }
     
     
     
-    res.send(speech);
+    // res.send(speech);
     
 });
